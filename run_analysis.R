@@ -14,3 +14,9 @@ yTest = read.table("./Dataset/test/y_test.txt")
 
 ## Labels columns
 colnames(activityLabels) <- c("activityId", "activityType")
+colnames(subjectTrain) <- "subjectId"
+colnames(subjectTest) <- "subjectId"
+colnames(yTrain) <- "activityId"
+colnames(yTest) <- "activityId"
+colnames(xTrain) <- features$V2
+colnames(xTest) <- features$V2
