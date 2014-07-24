@@ -20,3 +20,7 @@ colnames(yTrain) <- "activityId"
 colnames(yTest) <- "activityId"
 colnames(xTrain) <- features$V2
 colnames(xTest) <- features$V2
+
+## Merges de trainig dataset and the test dataset
+Training <- cbind(subjectTrain, xTrain, yTrain)
+Test <- cbind(subjectTest, xTest, yTest)
