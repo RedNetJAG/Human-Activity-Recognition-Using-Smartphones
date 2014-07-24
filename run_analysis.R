@@ -26,3 +26,12 @@ Training <- cbind(subjectTrain, xTrain, yTrain)
 Test <- cbind(subjectTest, xTest, yTest)
 ## Result for 1.Merges the training and the test sets to create one dataset
 TrainingTest <- rbind(Training, Test)
+
+## 2.Extracts only the measurements on the mean and standard deviation
+## for each measurement
+## extract the colnames to parse them
+columnas <- colnames(TrainingTest)
+colextract <- grepl("-mean\\(", columnas) | grepl("-std", columnas) | grepl("subjectId", columnas) | grepl("activityId", columnas)
+## Result for 2: MeanStd
+MeanStd <- TrainingTest[colextract]
+
