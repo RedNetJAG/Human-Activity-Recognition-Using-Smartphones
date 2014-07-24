@@ -24,3 +24,5 @@ colnames(xTest) <- features$V2
 ## Merges de trainig dataset and the test dataset
 Training <- cbind(subjectTrain, xTrain, yTrain)
 Test <- cbind(subjectTest, xTest, yTest)
+## Result for 1.Merges the training and the test sets to create one dataset
+TrainingTest <- rbind(Training, Test)
