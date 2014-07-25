@@ -1,14 +1,11 @@
 Human Activity Recognition Using Smartphones Data Set
 =====================================================
-
 Source:
 Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto. 
 Smartlab - Non Linear Complex Systems Laboratory 
 DITEN - UniversitÃ  degli Studi di Genova, Genoa I-16145, Italy. 
 activityrecognition '@' smartlab.ws 
 www.smartlab.ws 
-
-
 
 Data Set Information:
 
@@ -36,3 +33,7 @@ Citation Request:
 
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 
+run_analysis.R Process
+==============================================
+
+The run_analysis.R Process starts reading the raw data from the different files: features.txt (List of all features), activity_labels.txt (Links the class labels with their activity name), /train/subject_train.txt (Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30), /train/x_train.txt (Training set), /train/y_train.txt (Training labels), /test/subject_test.txt (same as /train/subject_train.txt), /test/x_test.txt (Test set), /test/y_test.txt (Test labels).
