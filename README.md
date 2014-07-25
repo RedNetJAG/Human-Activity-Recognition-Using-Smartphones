@@ -37,3 +37,12 @@ run_analysis.R Process
 ==============================================
 
 The run_analysis.R Process starts reading the raw data from the different files: features.txt (List of all features), activity_labels.txt (Links the class labels with their activity name), /train/subject_train.txt (Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30), /train/x_train.txt (Training set), /train/y_train.txt (Training labels), /test/subject_test.txt (same as /train/subject_train.txt), /test/x_test.txt (Test set), /test/y_test.txt (Test labels).
+
+Once it has read the raw data, labels the column that needed with friendly names, merges de trainig dataset and the test dataset by columns, and merges both data sets by rows to make one data set, "TrainingTest".
+
+For the second point: 'Extracts only the measurements on the mean and standard deviation for each measurement', run_analysis.R extracts the column names to parse them, looking for the characters: "-mean(", "-std", "subjectId" and "activityId". Once we had the correspondant colnames, it extracts to "MeanStd" the data frame needded.
+
+
+
+
+
