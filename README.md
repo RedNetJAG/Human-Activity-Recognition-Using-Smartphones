@@ -46,7 +46,8 @@ For the second point: 'Extracts only the measurements on the mean and standard d
 
 4.Appropriately labels the data set with descriptive variable names: it extracts the colnames from 'MeanStdFinal' to a character vector, removes '()' and replaces characters to make them friendly, re-labeling the colnames of the data set.
 
-
+Finally, to create a second, independent tidy data set with the average of each variable for each activity and each subject, 'run_analysis.R' remove 'activityId' beacause is redundant (MeanStdFinal has the column 'activityType'), melts MeanStdFinal, telling it that the id var are "activityType" and "subjectId", to compute the average for each of them. Then it casts the molten data frame 'AverageData' into the data frame 'Average', the result for the point 5.
+Once it obtain the the average of each variable for each activity and each subject, run_analysis.R wirtes the result 'Average' into a txt file, "TidyData.txt".
 
 
 
