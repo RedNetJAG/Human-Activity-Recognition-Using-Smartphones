@@ -42,6 +42,10 @@ Once it has read the raw data, labels the column that needed with friendly names
 
 For the second point: 'Extracts only the measurements on the mean and standard deviation for each measurement', run_analysis.R extracts the column names to parse them, looking for the characters: "-mean(", "-std", "subjectId" and "activityId". Once we had the correspondant colnames, it extracts to "MeanStd" the data frame needded.
 
+3.Uses descriptive activity names to name the activities in the data set: In this point, it only has to merge the dataset, MeanStd, with the data set from the file 'activity_labels.txt', obtaining 'MeanStdFinal'.
+
+4.Appropriately labels the data set with descriptive variable names: it extracts the colnames from 'MeanStdFinal' to a character vector, removes '()' and replaces characters to make them friendly, re-labeling the colnames of the data set.
+
 
 
 
