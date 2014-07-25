@@ -79,9 +79,9 @@ Variables in the Final Tidy Dataset "Average", file "TidyData.txt"
 ==================================================================
 Id Vars:
 
-$subjectId "integer"   - Subject Id of the participant (from 1 to 30).
+`subjectId` "integer"   - Subject Id of the participant (from 1 to 30).
 
-$activityType "factor" - The type of the activity performed: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING,                              STANDING, LAYING.
+`activityType` "factor" - The type of the activity performed: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING,                              STANDING, LAYING.
 
 Measure Vars:
 
