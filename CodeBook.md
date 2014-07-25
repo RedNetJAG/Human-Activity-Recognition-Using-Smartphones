@@ -82,11 +82,11 @@ Id Vars:
 $subjectId "integer"   - Subject Id of the participant. (from 1 to 30)
 $activityType "factor" - The type of the activity performed: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING,                              STANDING, LAYING.
 
-Measure Vars
-$`tBodyAcc-MEAN-X` "numeric"
-$`tBodyAcc-MEAN-Y` "numeric"
-$`tBodyAcc-MEAN-Z` "numeric"
-$`tBodyAcc-STD-X` "numeric"
+Measure Vars:
+`tBodyAcc-MEAN-X` "numeric"
+`tBodyAcc-MEAN-Y` "numeric"
+`tBodyAcc-MEAN-Z` "numeric"
+`tBodyAcc-STD-X` "numeric"
 $`tBodyAcc-STD-Y` "numeric"
 $`tBodyAcc-STD-Z` "numeric"
 $`tGravityAcc-MEAN-X` "numeric"
